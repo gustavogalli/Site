@@ -16,7 +16,7 @@
     --sombra: rgba(0, 0, 0, 0.5);
 
     --cor-padrao: var(--vermelho); 
-    --cor-fundo: var(--preto)
+    --cor-fundo: var(--preto);
 
     /* Fontes */
     --fonte-suave: 'Cabin', sans-serif;
