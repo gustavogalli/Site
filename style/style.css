@@ -118,10 +118,25 @@ strong {
     font-weight: bold;
 }
 
+.foto-e-contato {
+    display: inline;
+    float: left;
+    margin: 20px;
+    width: calc(var(--full-size) * 0.2);
+}
+
 .foto-perfil{
+    border-radius: 50%;
     float: left;
     width: calc(var(--full-size) * 0.2);
-    margin: 20px;
+    box-shadow: 1px 1px 10px var(--sombra);
+    margin-bottom: 30px;
+}
+
+
+.icone-linkedin, .icone-github {
+    width: 50px;
+    margin: 10px
 }
 
 .destaque{
