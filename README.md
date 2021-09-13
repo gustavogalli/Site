@@ -1,0 +1,1 @@
+Buscando exercitar o desenvolvimento de sites com os conhecimentos adquiridos em HTML5, CSS3 e JavaScript, decidi desenvolver um site biográfico, que aborde tanto meu perfil profissional quanto o pessoal, demonstrando minha trajetória e meus planos para os próximos passos.
