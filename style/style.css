@@ -27,175 +27,189 @@
     --full-size: 1000px;
 }
 
-body {
+body{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: var(--preto);
-    color: var(--preto)
+    color: var(--preto);
 }
 
-/* HEADER ----------------------------------- */
 
-header {
-    background-color: var(--cor-padrao);
-    text-align: center;
+/* ------------------- HEADER ------------------- */
+header{
+    background-color: var(--vermelho);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
 }
 
-.header-textos {
+.titles{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
     font-family: var(--fonte-suave);
     text-shadow: 2px 2px 3px var(--sombra);
 }
 
-.header-h1 {
-    padding-top: 20px;
-    font-size: 4em;
-    text-transform: uppercase;
+.titles h1{
+    font-size: 4.5em;
 }
 
-.header-p {
-    padding: 10px 0px 10px 0;
+.titles p{
     font-size: 1.5em;
     color: var(--branco);
     text-transform: lowercase;
 }
 
-nav {
-    padding-top: 10px;
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    justify-self: center;
+    width: 1000px;
     font-family: var(--fonte-titulos);
     font-size: 2em;
 }
 
-nav li {
-    display: inline-block;
-    padding-top: 10px;
-    width: 20%;
-    margin: 0 10px;
+.menu li{
+    font-size: 1em;
+    color: black;
+    text-transform: uppercase;
+    padding: 10px 30px 5px;
     text-shadow: 1px 1px 2px var(--sombra);
-    color: var(--preto)
 }
 
-nav li:hover{
+.menu a{
+    text-decoration: none;
+}
+
+.menu li:hover{
     background-color: var(--vermelho-escuro);
-    border-radius: 30px 30px 0 0;
+    border-radius: 20px 20px 0 0;
     transition: 0.5s background-color;
 }
 
-nav li:active {
+.menu li:active{
     color: var(--branco);
     transition: none;
 }
 
-
-/* MAIN ------------------------------------- */
+/* ------------------- MAIN ------------------- */
 main {
     background-color: var(--branco);
     font-family: var(--fonte-ubuntu);
     width: var(--full-size);
-    margin: auto;
-    height: 100%;
-    text-indent: 50px;
-    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px;
 }
 
-main h2 {
+h2{
+    align-self: center;
+    margin: 20px;
     font-size: 3em;
-    text-align: center;
-    padding: 20px;
     color: var(--vermelho);
     font-weight: bolder;
-    text-shadow: 2px 2px 1px black;
+    text-shadow: 2px 2px 1px var(--preto);
 }
 
-.introducao {
-    padding: 10px 0;
+main .intro {
+    display: flex;
 }
 
-.introducao p {
-    line-height: 1.5em;
-    margin: 10px;
-    padding: 10px 35px 0 25%;
+.pictures{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-strong {
-    font-weight: bold;
-}
-
-.foto-e-contato {
-    display: inline;
-    float: left;
-    margin: 20px;
-    width: calc(var(--full-size) * 0.2);
-}
-
-.foto-perfil{
+.pictures .profile{
+    width: 200px;
     border-radius: 50%;
-    float: left;
-    width: calc(var(--full-size) * 0.2);
     box-shadow: 1px 1px 10px var(--sombra);
-    margin-bottom: 30px;
 }
 
+.icons {
+    display: flex;
+    width: 150px;
+    justify-content: space-evenly;
+    margin: 20px;
+}
 
-.icone-linkedin, .icone-github {
-    width: 35px;
-    margin: 10px
+.icon{
+    width: 50px;
+}
+
+.intro .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 20px;
+    text-align: justify;
+    text-indent: 50px;
+    line-height: 1.5em;
+}
+
+strong{
+    font-weight: bold;
 }
 
 .destaque{
     font-weight: bolder;
-    color: var(--vermelho);
+    color: var(--vermelho)
 }
 
-.saiba-mais{
-    padding: 30px 0;
+.more-info{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    /* background-color: turquoise; */
 }
 
-.saiba-mais h3{
-    text-align: center;
-    margin: 40px;
-    font-weight: bold;
+.more-info h3{
+    align-self: center;
+    margin: 70px 0 30px 0;
     font-size: 2em;
+    font-weight: bold;
     font-family: var(--fonte-titulos);
-    color: var(--vermelho);
+    color: var(--vermelho)
 }
 
-.saiba-mais p {
-    padding: 0 35px;
+.more-info .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 10px;
+    text-align: justify;
+    text-indent: 50px;
     line-height: 1.5em;
-    margin: 10px;
+    /* background-color: yellowgreen; */
+    height: 200px;
 }
 
-.saiba-mais p:before{
+.more-info p:before{
     content: '\27A4  ';
     color: var(--vermelho)
 }
 
-.saiba-mais strong, .saiba-mais a {
+.more-info strong, .more-info a{
     text-transform: uppercase;
     text-decoration: none;
     color: var(--vermelho);
     text-shadow: 0.5px 0.5px 1px var(--sombra);
 }
 
-.saiba-mais a:hover{
-    text-decoration: underline;
-}
-
-
-/* FOOTER ----------------------------------- */
-footer {
+footer{
     background-color: var(--vermelho);
-    font-family: var(--fonte-suave);
-    border-radius: 0 0 20px 20px;
     width: var(--full-size);
-    margin: auto auto 20px auto;
-}
-
-footer p {
-    height: 1.5em;
-    line-height: 1.5em;
-    text-align: center;
+    padding: 10px 20px;
+    border-radius: 0 0 30px 30px;
     color: var(--branco);
-}
-
-footer strong {
-    font-weight: bold;
+    text-align: center;
+    font-family: var(--fonte-suave);
 }
