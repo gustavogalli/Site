@@ -6,16 +6,22 @@
 
 :root{
     /* Cores */
-    --preto: #0b0a07;
+    --preto: #141115;
     --vermelho: #d33d51;
     --vermelho-escuro: #b63345;
-    --laranja: #f46036;
+    --laranja: #F7934C;
+    --laranja-escuro: #df8545;
     --amarelo: #f0ec57;
-    --azul: #94bfbe;
+    --amarelo-escuro: #ddd84f;
+    --verde: #2E933C;
+    --verde-escuro: #278033;
+    --azul: #4A5899;
+    --azul-escuro: #3b477a;
     --branco: #f1f1f1;
     --sombra: rgba(0, 0, 0, 0.5);
 
     --cor-padrao: var(--vermelho); 
+    --cor-padrao-escura: var(--vermelho-escuro);
     --cor-fundo: var(--preto);
 
     /* Fontes */
@@ -39,7 +45,7 @@ body{
 
 /* ------------------- HEADER ------------------- */
 header{
-    background-color: var(--vermelho);
+    background-color: var(--cor-padrao);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -89,7 +95,7 @@ header{
 }
 
 .menu li:hover{
-    background-color: var(--vermelho-escuro);
+    background-color: var(--cor-padrao-escura);
     border-radius: 20px 20px 0 0;
     transition: 0.5s background-color;
 }
@@ -113,7 +119,7 @@ h2{
     align-self: center;
     margin: 20px;
     font-size: 3em;
-    color: var(--vermelho);
+    color: var(--cor-padrao);
     font-weight: bolder;
     text-shadow: 2px 2px 1px var(--preto);
 }
@@ -161,14 +167,13 @@ strong{
 
 .destaque{
     font-weight: bolder;
-    color: var(--vermelho)
+    color: var(--cor-padrao)
 }
 
 .more-info{
     display: flex;
     flex-direction: column;
     height: 350px;
-    /* background-color: turquoise; */
 }
 
 .more-info h3{
@@ -177,7 +182,7 @@ strong{
     font-size: 2em;
     font-weight: bold;
     font-family: var(--fonte-titulos);
-    color: var(--vermelho)
+    color: var(--cor-padrao)
 }
 
 .more-info .text{
@@ -188,24 +193,23 @@ strong{
     text-align: justify;
     text-indent: 50px;
     line-height: 1.5em;
-    /* background-color: yellowgreen; */
     height: 200px;
 }
 
 .more-info p:before{
     content: '\27A4  ';
-    color: var(--vermelho)
+    color: var(--cor-padrao)
 }
 
 .more-info strong, .more-info a{
     text-transform: uppercase;
     text-decoration: none;
-    color: var(--vermelho);
+    color: var(--cor-padrao);
     text-shadow: 0.5px 0.5px 1px var(--sombra);
 }
 
 footer{
-    background-color: var(--vermelho);
+    background-color: var(--cor-padrao);
     width: var(--full-size);
     padding: 10px 20px;
     border-radius: 0 0 30px 30px;
