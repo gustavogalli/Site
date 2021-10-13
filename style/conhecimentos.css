@@ -5,7 +5,7 @@
 
     display: grid;
     grid-template-columns: repeat(2, 50%);
-    grid-template-rows: 50px 300px 50px 300px;
+    grid-template-rows: 1fr 300px 1fr;
     grid-template-areas: 
     'formacao formacao'
     'faculdades idiomas'
@@ -31,11 +31,11 @@ div > h3{
     /* border-radius: 50px; */
     background-image: linear-gradient(to left, rgba(241, 241, 241, 1), #f19143, rgba(241, 241, 241, 1));
     color: white;
+    margin-top: 30px;
 }
 
 div > h4{
     text-align: center;
-    padding-top: 10px;
     text-transform: uppercase;
 }
 
@@ -44,9 +44,10 @@ div > h4{
 }
 
 h4{
-    color: purple;
+    color: #141115;
     font-size: 1.5em;
     font-weight: bolder;
+    margin: 30px;
 }
 
 .faculdades, .idiomas{
@@ -54,7 +55,7 @@ h4{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding: 10px;
+    margin: 10px;
 }
 
 .item{
@@ -67,7 +68,7 @@ h4{
     border-radius: 10px;
 }
 
-.item p{
+.item p, .soft-skills li{
     font-size: 1.2em;
     width: 250px;
     margin: 0 10px;
@@ -86,13 +87,40 @@ h4{
     width: 100px;
 }
 
-.barra{
-    /* background-image: linear-gradient(to top, rgb(4, 153, 4), rgb(65, 228, 65));
-    width: 140px;
-    height: 1em; */
+.hard-skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hard-skills .item{
+    padding: 10px 0;
+    height: 80px;
+}
+
+.hard-skills p{
+    width: 130px;
+    padding-left: 10px;
+}
+
+.barra {
     border-radius: 30px;
     border: 1px solid black;
     display: flex;
+}
+
+.barra-in-0{
+    height: 1em;
+    width: 0px;
+    background-image: linear-gradient(to top, rgb(4, 153, 4), rgb(65, 228, 65));
+    border-radius: 30px;
+}
+
+.barra-out-0{
+    height: 1em;
+    width: 140px;
+    background-image: linear-gradient(to top, rgb(107, 107, 107),rgb(172, 172, 172));
+    border-radius: 30px;
 }
 
 .barra-in-20{
@@ -105,7 +133,7 @@ h4{
 .barra-out-20{
     height: 1em;
     width: 112px;
-    background-image: linear-gradient(to top, rgb(88, 88, 88),rgb(141, 141, 141));
+    background-image: linear-gradient(to top, rgb(107, 107, 107),rgb(172, 172, 172));
     border-radius: 0 30px 30px 0;
 }
 
@@ -119,7 +147,49 @@ h4{
 .barra-out-40{
     height: 1em;
     width: 84px;
-    background-image: linear-gradient(to top, rgb(88, 88, 88),rgb(141, 141, 141));
+    background-image: linear-gradient(to top, rgb(107, 107, 107),rgb(172, 172, 172));
+    border-radius: 0 30px 30px 0;
+}
+
+.barra-in-60{
+    height: 1em;
+    width: 84px;
+    background-image: linear-gradient(to top, rgb(4, 153, 4), rgb(65, 228, 65));
+    border-radius: 30px 0 0 30px;
+}
+
+.barra-out-60{
+    height: 1em;
+    width: 56px;
+    background-image: linear-gradient(to top, rgb(107, 107, 107),rgb(172, 172, 172));
+    border-radius: 0 30px 30px 0;
+}
+
+.barra-in-80{
+    height: 1em;
+    width: 112px;
+    background-image: linear-gradient(to top, rgb(4, 153, 4), rgb(65, 228, 65));
+    border-radius: 30px 0 0 30px;
+}
+
+.barra-out-80{
+    height: 1em;
+    width: 28px;
+    background-image: linear-gradient(to top, rgb(107, 107, 107),rgb(172, 172, 172));
+    border-radius: 0 30px 30px 0;
+}
+
+.barra-in-90{
+    height: 1em;
+    width: 126px;
+    background-image: linear-gradient(to top, rgb(4, 153, 4), rgb(65, 228, 65));
+    border-radius: 30px 0 0 30px;
+}
+
+.barra-out-90{
+    height: 1em;
+    width: 14px;
+    background-image: linear-gradient(to top, rgb(107, 107, 107),rgb(172, 172, 172));
     border-radius: 0 30px 30px 0;
 }
 
@@ -129,6 +199,33 @@ h4{
     height: 1em;
     border-radius: 10px;
     border: 1px solid black;
+}
+
+.soft-skills{
+    padding: 0 10px;
+}
+
+.list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.list ul{
+    height: 500px;
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.soft-skills li{
+    width: 350px;
+}
+
+.soft-skills li::before{
+    content: "✅ ";
 }
 
 .idiomas{
