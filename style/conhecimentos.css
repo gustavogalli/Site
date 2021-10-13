@@ -47,7 +47,7 @@ div > h4{
     grid-area: formacao;
 }
 
-.faculdades{
+.faculdades, .idiomas{
     grid-area: faculdades;
     display: flex;
     flex-direction: column;
@@ -55,20 +55,33 @@ div > h4{
     padding: 10px;
 }
 
-.faculdades .item{
+.item{
     display: flex;
     align-items: center;
 }
 
-.faculdades .item img{
+.item img{
     width: 60px;
     border-radius: 10px;
 }
 
-.faculdades .item p{
+.item p{
     font-size: 1.2em;
     width: 250px;
     margin: 0 10px;
+}
+
+.idiomas{
+    align-items: center;
+}
+
+.idiomas .item{
+    justify-content: flex-end;
+    width: 350px;
+}
+
+.idiomas p{
+    width: 100px;
 }
 
 .barra{
@@ -78,6 +91,20 @@ div > h4{
     border-radius: 30px;
     border: 1px solid black;
     display: flex;
+}
+
+.barra-in-20{
+    height: 1em;
+    width: 28px;
+    background-image: linear-gradient(to top, rgb(4, 153, 4), rgb(65, 228, 65));
+    border-radius: 30px 0 0 30px;
+}
+
+.barra-out-20{
+    height: 1em;
+    width: 112px;
+    background-image: linear-gradient(to top, rgb(88, 88, 88),rgb(141, 141, 141));
+    border-radius: 0 30px 30px 0;
 }
 
 .barra-in-40{
