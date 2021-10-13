@@ -5,16 +5,12 @@
 
     display: grid;
     grid-template-columns: repeat(2, 50%);
-    grid-template-rows: 50px 200px 50px 300px;
+    grid-template-rows: 50px 300px 50px 300px;
     grid-template-areas: 
     'formacao formacao'
     'faculdades idiomas'
     'tecnologia tecnologia'
     'hard-skills soft-skills'
-}
-
-div{
-    /* border: 1px solid black; */
 }
 
 div > h3{
@@ -45,6 +41,12 @@ div > h4{
 
 .formacao{
     grid-area: formacao;
+}
+
+h4{
+    color: purple;
+    font-size: 1.5em;
+    font-weight: bolder;
 }
 
 .faculdades, .idiomas{
