@@ -1,0 +1,119 @@
+.board{
+    height: 100%;
+    width: 100%;
+    background-color: #f1f1f1;
+
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 50px 200px 50px 300px;
+    grid-template-areas: 
+    'formacao formacao'
+    'faculdades idiomas'
+    'tecnologia tecnologia'
+    'hard-skills soft-skills'
+}
+
+div{
+    /* border: 1px solid black; */
+}
+
+div > h3{
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 2em;
+    text-align: center;
+    line-height: 50px;
+}
+
+.imagem{
+    width: 70px;
+    height: 70px;
+    background-color: darkgreen;
+}
+
+.formacao, .tecnologia{
+    /* border-radius: 50px; */
+    background-image: linear-gradient(to left, rgba(241, 241, 241, 1), #f19143, rgba(241, 241, 241, 1));
+    color: white;
+}
+
+div > h4{
+    text-align: center;
+    padding-top: 10px;
+    text-transform: uppercase;
+}
+
+.formacao{
+    grid-area: formacao;
+}
+
+.faculdades{
+    grid-area: faculdades;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.faculdades .item{
+    display: flex;
+    align-items: center;
+}
+
+.faculdades .item img{
+    width: 60px;
+    border-radius: 10px;
+}
+
+.faculdades .item p{
+    font-size: 1.2em;
+    width: 250px;
+    margin: 0 10px;
+}
+
+.barra{
+    /* background-image: linear-gradient(to top, rgb(4, 153, 4), rgb(65, 228, 65));
+    width: 140px;
+    height: 1em; */
+    border-radius: 30px;
+    border: 1px solid black;
+    display: flex;
+}
+
+.barra-in-40{
+    height: 1em;
+    width: 56px;
+    background-image: linear-gradient(to top, rgb(4, 153, 4), rgb(65, 228, 65));
+    border-radius: 30px 0 0 30px;
+}
+
+.barra-out-40{
+    height: 1em;
+    width: 84px;
+    background-image: linear-gradient(to top, rgb(88, 88, 88),rgb(141, 141, 141));
+    border-radius: 0 30px 30px 0;
+}
+
+.barra-completa{
+    background-image: linear-gradient(to top, orange, yellow);
+    width: 140px;
+    height: 1em;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.idiomas{
+    grid-area: idiomas;
+}
+
+.tecnologia{
+    grid-area: tecnologia;
+}
+
+.hard-skills{
+    grid-area: hard-skills;
+}
+
+.soft-skills{
+    grid-area: soft-skills;
+}
