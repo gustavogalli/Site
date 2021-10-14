@@ -13,12 +13,19 @@
     'hard-skills soft-skills'
 }
 
+h2{
+    margin-bottom: 50px;
+}
+
 div > h3{
     text-transform: uppercase;
     font-weight: bolder;
     font-size: 2em;
     text-align: center;
     line-height: 50px;
+    border-radius: 50px;
+    color: black;
+    background-color: #F3A712;
 }
 
 .imagem{
@@ -27,12 +34,12 @@ div > h3{
     background-color: darkgreen;
 }
 
-.formacao, .tecnologia{
-    /* border-radius: 50px; */
+/* .formacao, .tecnologia{
+    border-radius: 50px;
     background-image: linear-gradient(to left, rgba(241, 241, 241, 1), #f19143, rgba(241, 241, 241, 1));
     color: white;
     margin-top: 30px;
-}
+} */
 
 div > h4{
     text-align: center;
@@ -47,7 +54,6 @@ h4{
     color: #141115;
     font-size: 1.5em;
     font-weight: bolder;
-    margin: 30px;
 }
 
 .faculdades, .idiomas{
@@ -85,6 +91,10 @@ h4{
 
 .idiomas p{
     width: 100px;
+}
+
+.hard-skills h4, .soft-skills h4{
+    margin: 40px;
 }
 
 .hard-skills{
